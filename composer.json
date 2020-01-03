@@ -1,0 +1,25 @@
+{
+    "name": "intelbras/sso-keycloak-php",
+    "description": "Módulo desacoplado para realizar a função de login com SSO via keycloak",
+    "type": "library",
+    "homepage": "http://intelbras.com.br/",
+    "keywords": [
+        "SSO"
+    ],
+    "author": "Lucas Medeiros Cardoso",
+    "autoload": {
+        "psr-4": {
+            "SSO\\": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    },
+    "require": {
+        "php": ">=5.6.0",
+        "stevenmaguire/oauth2-keycloak": "2.0.0",
+        "zendframework/zend-servicemanager": "2.3.9",
+        "zendframework/zend-session": "2.3.9",
+        "doctrine/collections": "1.4.0"
+    }
+}
